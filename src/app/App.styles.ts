@@ -6,6 +6,8 @@ max-width:750px;
 margin:auto;
 display:flex;
 padding:50px 0;
+height: 100vh;
+
 
     @media(max-width:750px){
         flex-direction:column;
@@ -48,4 +50,12 @@ justify-content:flex-end;
     justify-content:center;
     margin: 0 20px;
 }
+`;
+
+export const Grid = styled.div`
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-height:500px;
 `;

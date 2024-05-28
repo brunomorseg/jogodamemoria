@@ -34,3 +34,27 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+//Passo 1 - resetar o jogo
+    setTimeElapsed(0)
+    setMoveCount(0)
+    setShowCount(0)
+
+    //Passo 2 - criar a grid
+    //2.1-criar um grid vazio
+
+    let tmpGrid:GridItemType[]=[]
+
+    for(let i = 0; i<12; i++) {
+      tmpGrid.push({
+        item:null,
+        show:false,
+        permanentShow:false
+      })
+    }
+    //Passo 2.3 - Jogar na State
+    setGridItems(tmpGrid)
+
+
+    //Passo 3 - Começar o jogo
+    setPlaying(true)
